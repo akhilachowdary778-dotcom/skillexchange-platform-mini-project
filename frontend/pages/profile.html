@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Profile | SkillSwapHub</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:400;600;700&family=Poppins:400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=2">
+</head>
+<body class="light-background">
+
+  <!-- Global Header -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid position-relative d-flex align-items-center px-4">
+      <a href="dashboard.html" class="logo d-flex align-items-center me-auto text-decoration-none">
+        <h1 class="sitename mb-0 fs-3">SkillSwapHub</h1>
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" onclick="logout(); return false;" class="btn btn-outline-primary btn-sm px-3"><i class="bi bi-box-arrow-right me-1"></i> Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="mb-4 d-none d-md-block px-3">
+        <p class="text-uppercase small fw-bold text-muted mb-2 tracking-wider">Main Menu</p>
+      </div>
+      <nav class="nav flex-column gap-2 border-0">
+        <a class="nav-link text-decoration-none" href="dashboard.html">
+          <i class="bi bi-grid-1x2-fill"></i> My Dashboard
+        </a>
+        <a class="nav-link text-decoration-none" href="browse-skills.html">
+          <i class="bi bi-search"></i> Browse Community
+        </a>
+        <a class="nav-link active text-decoration-none" href="profile.html">
+          <i class="bi bi-person-circle"></i> User Profile
+        </a>
+        <a class="nav-link text-decoration-none mt-4 text-muted" href="#" onclick="logout(); return false;">
+          <i class="bi bi-box-arrow-left"></i> Sign Out
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-content w-100">
+
+      <section class="page-title text-center rounded-3 mb-4 py-5 shadow-sm">
+        <div class="container">
+          <h1 class="mb-2">My Profile</h1>
+          <p class="mb-0">Manage your personal details and skill preferences</p>
+        </div>
+      </section>
+
+      <div class="container-fluid px-0 align-items-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="dashboard-card p-5">
+              
+              <form id="profile-form">
+                <div class="mb-5 text-center">
+                  <div class="d-inline-flex justify-content-center align-items-center bg-light rounded-circle mb-3" style="width: 100px; height: 100px; border: 4px solid var(--border-color);">
+                    <i class="bi bi-person text-secondary" style="font-size: 4rem;"></i>
+                  </div>
+                  <h4 class="fw-bold fs-3" id="display-name">Loading...</h4>
+                  <p class="text-muted" id="display-email">loading@example.com</p>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-bold">Full Name</label>
+                  <input type="text" id="profile-name" class="form-control form-control-lg" required>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-bold">Short Bio</label>
+                  <textarea id="profile-bio" class="form-control form-control-lg" rows="3" placeholder="Tell others a bit about yourself..."></textarea>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-bold text-accent"><i class="bi bi-star-fill me-1"></i> Skills I Offer</label>
+                    <textarea id="profile-offered" class="form-control form-control-lg" rows="4" placeholder="e.g. Graphic Design, Python, Cooking..."></textarea>
+                    <div class="form-text text-muted small">Top skills you can teach to others.</div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-bold text-primary"><i class="bi bi-search me-1"></i> Skills I Want</label>
+                    <textarea id="profile-wanted" class="form-control form-control-lg" rows="4" placeholder="e.g. Spanish, SEO, Piano..."></textarea>
+                    <div class="form-text text-muted small">Skills you are looking to learn.</div>
+                  </div>
+                </div>
+
+                <div id="profile-message" class="mt-2 text-center mb-3"></div>
+
+                <div class="text-end mt-4 pt-3 border-top border-light">
+                  <button type="submit" class="btn btn-primary-custom px-5 btn-lg">Save Profile Updates</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <footer class="custom-footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">© <strong>SkillSwapHub</strong> All Rights Reserved. Swap skills, not money!</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/profile.js"></script>
+</body>
+</html>

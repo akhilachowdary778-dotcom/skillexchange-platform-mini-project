@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SkillSwapHub</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:400;600;700&family=Poppins:400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body class="light-background">
+
+  <!-- Clean Professional Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto text-decoration-none">
+        <h1 class="sitename fs-3 mb-0">SkillSwapHub</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul class="d-flex list-unstyled gap-3 mb-0 align-items-center">
+          <li><a href="index.html" class="active text-decoration-none">Home</a></li>
+          <li><a href="login.html" id="login-link" class="text-decoration-none">Login</a></li>
+          <li>
+            <a href="register.html" id="register-link" class="btn btn-primary-custom ms-2 text-white">Join Free</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    
+    <!-- Hero Section with Gradient -->
+    <section id="hero" class="hero section text-center py-5" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); min-height: 80vh; display: flex; align-items: center;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill fs-6 fw-bold">100% Free Community</span>
+            <h1 class="display-4 fw-bold text-white mb-4" style="line-height: 1.2;">Swap Your Skills Instead of Your Cash</h1>
+            <p class="lead mb-5 text-white" style="color: #E0E7FF !important; max-width: 600px; margin: 0 auto;">Connect with anyone in our community. Teach them something you know, and learn something new from them in return.</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="register.html" class="btn btn-accent btn-lg px-5 py-3 fs-5 shadow">Get Started Now</a>
+              <a href="#how-it-works" class="btn btn-outline-light btn-lg px-5 py-3 fs-5">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="section py-5 bg-white">
+      <div class="container pb-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: var(--text-primary);">How Skill Swapping Works</h2>
+          <p class="text-muted">A pure peer-to-peer knowledge exchange.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="dashboard-card p-4 text-center h-100 border-0 shadow-sm">
+              <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px; background-color: rgba(79, 70, 229, 0.1); color: var(--primary);">
+                <i class="bi bi-person-lines-fill fs-1"></i>
+              </div>
+              <h4 class="fw-bold">1. Join & Profile</h4>
+              <p class="text-muted mb-0">List what you can teach and what you want to learn. No money involved ever.</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="dashboard-card p-4 text-center h-100 border-0 shadow-sm">
+              <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px; background-color: rgba(6, 182, 212, 0.1); color: var(--secondary);">
+                <i class="bi bi-search fs-1"></i>
+              </div>
+              <h4 class="fw-bold">2. Browse Partners</h4>
+              <p class="text-muted mb-0">Search the community for the exact skills you need, directly from real people.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="dashboard-card p-4 text-center h-100 border-0 shadow-sm">
+              <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px; background-color: rgba(245, 158, 11, 0.1); color: var(--accent);">
+                <i class="bi bi-camera-video fs-1"></i>
+              </div>
+              <h4 class="fw-bold">3. Accept & Meet</h4>
+              <p class="text-muted mb-0">Send a request. When accepted, a Google Meet link is instantly generated for your swap!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="section py-5" style="background-color: var(--bg-color);">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" style="color: var(--text-primary);">Popular Swap Categories</h2>
+        </div>
+        
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="badge fs-5 py-3 px-4 shadow-sm" style="background-color: var(--primary); color: white;">💻 Technology</span>
+          <span class="badge fs-5 py-3 px-4 shadow-sm" style="background-color: #EC4899; color: white;">🎨 Design</span>
+          <span class="badge fs-5 py-3 px-4 shadow-sm" style="background-color: #10B981; color: white;">📈 Business</span>
+          <span class="badge fs-5 py-3 px-4 shadow-sm" style="background-color: var(--accent); color: white;">📈 Marketing</span>
+          <span class="badge fs-5 py-3 px-4 shadow-sm" style="background-color: var(--secondary); color: white;">🎸 Music</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="custom-footer text-center py-4">
+    <div class="container">
+      <h3 class="fw-bold mb-3" style="color: #FFFFFF;">SkillSwapHub</h3>
+      <p class="mb-0">© <strong>SkillSwapHub</strong> All Rights Reserved. Swap skills, not money!</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Handle dynamic navigation based on login status
+    const userId = localStorage.getItem("userId");
+
+    if (userId) {
+      document.getElementById("login-link").innerText = "Dashboard";
+      document.getElementById("login-link").href = "pages/dashboard.html";
+  
+      document.getElementById("register-link").innerText = "Sign Out";
+      document.getElementById("register-link").href = "#";
+      // Ensure we remove the primary custom button look when logged in so it looks clean
+      document.getElementById("register-link").classList.remove("btn", "btn-primary-custom", "text-white");
+      
+      document.getElementById("register-link").onclick = function (e) {
+        e.preventDefault();
+        localStorage.clear();
+        window.location.reload();
+      };
+    }
+  </script>
+</body>
+</html>

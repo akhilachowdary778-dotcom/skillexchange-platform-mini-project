@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Register | SkillSwapHub</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:400;600;700&family=Poppins:400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=2">
+</head>
+<body class="auth-page">
+
+  <!-- Minimal Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto text-decoration-none">
+        <h1 class="sitename fs-3 mb-0">SkillSwapHub</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul class="d-flex list-unstyled mb-0 gap-3">
+          <li><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li><a href="login.html" class="text-decoration-none">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow-1 d-flex justify-content-center align-items-center py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-9">
+          <div class="auth-card text-center">
+            
+            <div class="mb-4">
+              <div class="d-inline-flex justify-content-center align-items-center rounded-circle bg-light mb-3" style="width: 60px; height: 60px; color: var(--accent);">
+                <i class="bi bi-stars fs-2"></i>
+              </div>
+              <h2 class="mb-1 fw-bold fs-3">Join the Community</h2>
+              <p class="text-muted">Register to start swapping skills today</p>
+            </div>
+
+            <form onsubmit="validateRegister(event)">
+              <div class="mb-3 text-start">
+                <input type="text" id="reg-name" class="form-control" placeholder="Full name" required>
+              </div>
+
+              <div class="mb-3 text-start">
+                <input type="email" id="reg-email" class="form-control" placeholder="example@gmail.com" required>
+               
+
+              <div class="mb-3 text-start position-relative">
+                <input type="password" id="reg-password" class="form-control pe-5" placeholder="Password" required>
+                <i class="bi bi-eye position-absolute top-50 end-0 translate-middle-y me-3 text-muted cursor-pointer" onclick="togglePassword('reg-password')"></i>
+              </div>
+
+              <div class="mb-4 text-start position-relative">
+                <input type="password" id="reg-confirm" class="form-control pe-5" placeholder="Confirm password" required>
+                <i class="bi bi-eye position-absolute top-50 end-0 translate-middle-y me-3 text-muted cursor-pointer" onclick="togglePassword('reg-confirm')"></i>
+              </div>
+
+              <p class="text-danger small fw-semibold" id="register-error"></p>
+
+              <button class="btn btn-primary w-100 py-3 mt-2 fs-6" type="submit">Create Account</button>
+            </form>
+
+            <p class="mt-4 pt-3 mb-0 text-muted border-top border-light">
+              Already have an account? 
+              <a href="login.html" class="fw-bold text-decoration-none" style="color: var(--accent);">Login here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="custom-footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">© <strong>SkillSwapHub</strong> All Rights Reserved. Swap skills, not money!</p>
+    </div>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

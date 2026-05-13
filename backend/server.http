@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/skills
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "skillName": "Web Development",
+  "skillDescription": "HTML, CSS, JavaScript basics"
+}
+
+
+###
+GET http://localhost:3000/api/skills
