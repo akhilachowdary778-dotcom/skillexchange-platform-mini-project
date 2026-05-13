@@ -3,6 +3,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname);
 const publicDir = path.join(root, 'public');
+const publicPagesDir = path.join(publicDir, 'pages');
 const frontendPages = path.join(root, 'frontend', 'pages');
 const frontendCss = path.join(root, 'frontend', 'css');
 const frontendJs = path.join(root, 'frontend', 'js');
@@ -25,7 +26,7 @@ async function build() {
   await fs.promises.rm(publicDir, { recursive: true, force: true });
   await fs.promises.mkdir(publicDir, { recursive: true });
 
-  await copyDir(frontendPages, publicDir);
+  await copyDir(frontendPages, publicPagesDir);
   await copyDir(frontendCss, path.join(publicDir, 'css'));
   await copyDir(frontendJs, path.join(publicDir, 'js'));
 

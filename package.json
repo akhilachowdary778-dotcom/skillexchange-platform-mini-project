@@ -7,6 +7,14 @@
     "build": "node vercel-build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4",
+    "serverless-http": "^3.0.0",
+    "sqlite3": "^5.1.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -7,10 +7,17 @@
       "config": {
         "distDir": "public"
       }
+    },
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "src": "^/$", "dest": "/index.html" },
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "^/$", "dest": "/pages/index.html" },
+    { "src": "^/index\.html$", "dest": "/pages/index.html" },
+    { "src": "^/(register|login|browse-skills|dashboard|profile|add-skill)\.html$", "dest": "/pages/$1.html" },
     { "src": "^/(.*)$", "dest": "/$1" }
   ]
 }
